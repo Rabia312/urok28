@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок 28</title>  
+    
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+    <!--
+    Абсолютные пути:
+
+    Чтобы войти в ту или иную папку необходимо использовать " / "
+
+    Чтобы выйти из какой либо папки нужно использовать " .. "
+
+    Выйти и зайти будет выглядеть: " ../ " 
+    --> 
+    <link href="styles/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <!-- верхнее меню -->
+        <div class="verhnee_menu">
+            <div class="container">
+                <!-- левая сторона -->
+                <div class="left">
+                    <ul class="ul_li b-r">
+                        <li>
+                            <i class="fas fa-bullhorn"></i>
+                            SMS default welcome
+                        </li>
+                        <li>
+                            <span class="icon_msg">
+                                <i class="fas fa-gift"></i>
+                                <span class="msg">02</span>
+                            </span>
+                            <span>
+                                Gift vounchers
+                            </span>
+
+                        </li>
+                    </ul>
+                </div>
+                <!-- правая сторона -->
+                <div class="right">
+                    <ul class="ul_li b-r">
+                        <li>
+                            <i class="fa fa-language"></i>
+                            Language: ENG
+                        </li>
+                        <li>
+                            <i class="far fa-money-bill-alt"></i>
+                            Currency: USD
+                        </li>
+                        <li>Sign in / Register</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- центральное меню -->
+        <div class="center_menu">
+            <div class="container">
+                <ul class="ul_li">
+                    <li>
+                        <img src="img/header/logo.png" alt="логотип">
+                    </li>
+                    <li>
+                        <div class="left">
+                            <span class="seryi_krug">
+                                <i class="far fa-calendar-alt"></i>
+                            </span>
+                        </div>
+                        <div class="right m-l-10">
+                            <p>Mon - Sat 8h00 -18h00</p>
+                            <p>Sunday <span class="red">CLOSED</span></p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="left">
+                            <span class="seryi_krug">
+                                <i class="fas fa-bookmark"></i>
+                            </span>
+                        </div>
+                        <div class="right m-l-10">
+                            <p>Every Week Sales!</p>
+                            <p>Discount <span class="orange">up to 50% off.</span></p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="left">
+                            <span class="seryi_krug">
+                                <i class="fas fa-phone-alt"></i>
+                            </span>
+                        </div>
+                        <div class="right m-l-10">
+                            <p>Have a Questions?</p>
+                            <p>Call: <span class="blue">1900 - 819898.</span></p>
+                        </div>
+                    </li>                    
+                </ul>
+            </div>
+        </div>
+
+        <!-- нижнее меню  -->
+        <div class="nijnee_menu">
+            <div class="container">
+                <div class="left">
+                    <ul class="hover_menu ul_li">
+                        <li>
+                            <a href="#">Home</a>
+                            <div class="dropdown_menu home">
+                                <ul>
+                                    <li>Home Pages</li>
+                                    <li>Home page 1</li>
+                                    <li>Home page 2</li>
+                                    <li>Home page 3</li>
+                                </ul>
+                            </div>
+                        </li>                  
+
+                        <li>
+                            <a href="#">Products<i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown_menu products">
+                                <ul>
+                                    <li>Shop Pages</li>
+                                    <li>Shop Page 1</li>
+                                    <li>Shop Page 2</li>
+                                    <li>Shop Page 3</li>
+                                    <li>Shop Page 4</li>
+                                </ul>
+                                <ul>
+                                    <li>Products</li>
+                                    <li>Product 1</li>
+                                    <li>Product 2</li>
+                                    <li>Product 3</li>
+                                    <li>Product 4</li>
+                                </ul>
+                                <ul>
+                                    <li>Other Pages</li>
+                                    <li>Contact Us</li>
+                                    <li>Quick View</li>
+                                    <li>Popup Newsletter</li>
+                                </ul>
+                            </div>
+                        </li>                        
+
+                        <li>
+                            <a href="#">Sale<i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown_menu sale">
+                                <figure>
+                                    <img src="img/header/img86.jpg" alt="">
+                                    <p>New Trending '18</p>
+                                </figure>
+                                <figure>
+                                    <img src="img/header/img87.jpg" alt="">
+                                    <p>New Lookbooks</p>
+                                </figure>
+                                <figure>
+                                    <img src="img/header/img86.jpg" alt="">
+                                    <p>Onsale</p>
+                                </figure>
+                                 
+                            </div>
+                        </li>                        
+
+                        <li>
+                            <a href="#">Blogs</a>
+                            <div class="dropdown_menu blogs">
+                                <ul>
+                                    <li>Blogs</li>
+                                    <li>Blog Grid 1</li>
+                                    <li>Blog Grid2</li>
+                                    <li>Blog Grid3</li>
+                                    <li>Blog Grid4</li>
+                                </ul>
+                            </div>
+                        </li>                        
+
+                        <li>
+                            <a href="#">About us</a>
+                            <div class="dropdown_menu about_us">
+                                <ul>
+                                    <li>About Us</li>
+                                    <li>About Us 1</li>
+                                    <li>About Us 2</li>
+                                </ul>
+                            </div>
+                        </li>                        
+                    </ul>
+                </div>
+
+
+                <div class="right">
+                    
+                    <form action="#" method="GET" class="left search">
+                        <input type="search" placeholder="Search..." name="search">
+                        <button type="submit"><i class="fas fa-search"></i></button>                       
+                    </form>
+                   
+                    <div class="right cart">
+                        <div class="left">
+                            <div class="jeltyi_krug">
+                                <i class="fas fa-shopping-bag"></i>
+                                <div class="dropdown_menu my_cart">
+                                    <ul>
+                                        <li>
+                                            <img src="img/img51.jpg" alt="img in cart" width="100">
+                                            <div>
+                                                <p class="ttl">Crepe Jacket With Pompom</p>                                
+    
+                                                <div class="price">
+                                                    <span>$36</span>
+                                                    <del>$42</del>
+                                                </div>
+                                                <div class="trash">
+                                                    <i class="fas fa-trash-alt"></i>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img src="img/img51.jpg" alt="img in cart" width="100">
+                                            <div>
+                                                <p class="ttl">Animal Print Sweatshirt</p>                                
+    
+                                                <div class="price">
+                                                    <span>$36</span>
+                                                    <del>$42</del>
+                                                </div>
+                                                <i class="fas fa-trash-alt"></i>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img src="img/img51.jpg" alt="img in cart" width="100">
+                                            <div>
+                                                <p class="ttl">Knit Cardigan</p>                                
+    
+                                                <div class="price">
+                                                    <span>$36</span>
+                                                    <del>$42</del>
+                                                </div>
+                                                <i class="fas fa-trash-alt"></i>
+                                            </div>
+                                        </li>                                       
+                                    </ul>
+                                    <p class="ttl">Total</p>
+                                    <div class="price">
+                                        <span>$ 689.8</span>                                        
+                                    </div>                                     
+
+                                    <div class="btn_call"> 
+                                        <a href="tel:+84 988 992 085">check out</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right m-l-10">
+                            <p>My Cart.</p>
+                            <p>01/ <span>$150.00</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- <section id="product" class="mt-5"> -->
+            <section id="product">
+                <div class="block_title">
+                    <div class="left">
+                        <h1>Featured</h1>
+                    </div>
+                    <div class="right">
+                        <span>View All Products <i class="fas fa-chevron-circle-right"></i></span>
+                    </div>
+                </div>
+
+                <div class="body_block">
+                    <div class="list_product">
+                        
+                        <div class="product">
+                            <div class="img">
+                                <div class="tools bg_green">
+                                    <span>New</span>
+                                </div>
+
+                                <img src="img/product/img1.jpg" alt="img1.jpg">
+
+                                <div class="desc_img">
+                                    <div class="desc">
+                                        <p class="ttl">out of stock!</p>
+                                        <em><span class="orange">see</span>similar products</em>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="body_product">
+                                <p class="ttl">Animal Print Sweatshirt</p>
+                                <div class="block_stars">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="reviews">
+                                        <span>6 reviews(s)</span>
+                                    </div>
+                                </div>
+
+                                <div class="price">
+                                    <span>$36</span>
+                                    <del>$42</del>
+                                </div>
+                                <div class="btns dnone">
+                                    <ul class="ul_li">
+                                        <li>
+                                            <span class="seryi_krug">
+                                                <i class="fas fa-shopping-bag"></i>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="seryi_krug">
+                                                <i class="fas fa-balance-scale"></i>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="seryi_krug">
+                                                <i class="fas fa-heart"></i>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>    
+
+                        <div class="product">
+                            <div class="img">
+                                <div class="tools bg_orange">
+                                    <span>25%</span>
+                                </div>
+
+                                <img src="img/product/img2.jpg" alt="img1.jpg">
+
+                                <div class="desc_img">
+                                    <div class="desc">
+                                        <p class="ttl">out of stock!</p>
+                                        <em><span class="orange">see</span>similar products</em>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="body_product">
+                                <p class="ttl">Animal Print Sweatshirt</p>
+                                <div class="block_stars">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="reviews">
+                                        <span>6 reviews(s)</span>
+                                    </div>
+                                </div>
+
+                                <div class="price">
+                                    <span>$36</span>
+                                    <del>$42</del>
+                                </div>
+
+                                <div class="btns dnone">
+                                    <ul class="ul_li">
+                                        <li class="add_card">
+                                            <span class="seryi_krug">
+                                                <i class="fas fa-shopping-bag"></i>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="seryi_krug">
+                                                <i class="fas fa-balance-scale"></i>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="seryi_krug">
+                                                <i class="fas fa-heart"></i>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>     
+
+                        <div class="product">
+                            <div class="img">
+                                <div class="tools">
+                                    <span>New</span>
+                                </div>
+
+                                <img src="img/product/img3.jpg" alt="img1.jpg">
+
+                                <div class="desc_img">
+                                    <div class="desc">
+                                        <p class="ttl">out of stock!</p>
+                                        <em><span class="orange">see</span>similar products</em>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="body_product">
+                                <p class="ttl">Animal Print Sweatshirt</p>
+                                <div class="block_stars">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="reviews">
+                                        <span>6 reviews(s)</span>
+                                    </div>
+                                </div>
+
+                                <div class="price">
+                                    <span>$36</span>
+                                    <del>$42</del>
+                                </div>
+
+                                <div class="btns dnone">
+                                    <ul class="ul_li">
+                                        <li>
+                                            <span class="seryi_krug">
+                                                <i class="fas fa-shopping-bag"></i>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="seryi_krug">
+                                                <i class="fas fa-balance-scale"></i>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="seryi_krug">
+                                                <i class="fas fa-heart"></i>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>   
+
+                        <div class="product">
+                            <div class="img">
+                                <div class="tools">
+                                    <span>New</span>
+                                </div>
+
+                                <img src="img/product/img4.jpg" alt="img1.jpg">
+
+                                <div class="desc_img">
+                                    <div class="desc">
+                                        <p class="ttl">out of stock!</p>
+                                        <em><span class="orange">see</span>similar products</em>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="body_product">
+                                <p class="ttl">Animal Print Sweatshirt</p>
+                                <div class="block_stars">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="reviews">
+                                        <span>6 reviews(s)</span>
+                                    </div>
+                                </div>
+
+                                <div class="price">
+                                    <span>$36</span>
+                                    <del>$42</del>
+                                </div>
+
+                                <div class="btns dnone">
+                                    <ul class="ul_li">
+                                        <li>
+                                            <span class="seryi_krug">
+                                                <i class="fas fa-shopping-bag"></i>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="seryi_krug">
+                                                <i class="fas fa-balance-scale"></i>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="seryi_krug">
+                                                <i class="fas fa-heart"></i>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> 
+
+                        <div class="product">
+                            <div class="img">
+                                <div class="tools bg_green">
+                                    <span>New</span>
+                                </div>
+
+                                <img src="img/product/img1.jpg" alt="img1.jpg">
+
+                                <div class="desc_img">
+                                    <div class="desc">
+                                        <p class="ttl">out of stock!</p>
+                                        <em><span class="orange">see</span>similar products</em>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="body_product">
+                                <p class="ttl">Animal Print Sweatshirt</p>
+                                <div class="block_stars">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="reviews">
+                                        <span>6 reviews(s)</span>
+                                    </div>
+                                </div>
+
+                                <div class="price">
+                                    <span>$36</span>
+                                    <del>$42</del>
+                                </div>
+
+                                <div class="btns dnone">
+                                    <ul class="ul_li">
+                                        <li>
+                                            <span class="seryi_krug">
+                                                <i class="fas fa-shopping-bag"></i>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="seryi_krug">
+                                                <i class="fas fa-balance-scale"></i>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="seryi_krug">
+                                                <i class="fas fa-heart"></i>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- <section id="banner"> -->
+            <section id="banner" class="mt-5">
+                <div class="row">
+                    <div class="col-md-8 pe-2">
+                        <img src="img/banner/banner.png" alt="banner.png">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/banner/banner2.png" alt="banner2.png">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="mt-5">
+        <div class="container">
+            <div class="row">
+                <!-- <div class="col-sm-4 pe-5"> -->
+                <div class="col-sm-4">
+                    <p>
+                        <img src="img/header/logo.png" alt="">
+                    </p>
+                    <p class="mt-3">
+                        <em>Miukid is a premium eCommerce theme with
+                        advanced admin module.</em>
+                    </p>
+                        <ul class="mt-3 ms-3">
+                            <li>
+                                <span><i class="fas fa-phone-alt"></i></span>
+                                <span>
+                                    <span>Telephone:</span>    
+                                    <a href="tel:+84 988 992 085">+84 988 992 085</a> 
+                                </span>
+                            </li>
+                            <li>
+                                <span><i class="far fa-envelope"></i></span>
+                                <span>
+                                    <span>Email:</span>    
+                                    <a href="mailto:lamhvdesigner@gmail.com">lamhvdesigner@gmail.com</a> 
+                                </span>
+                            </li>
+                            <li>
+                                <span><i class="far fa-clock"></i></span>
+                                <span>
+                                    8:00 - 19:00, Monday - Saturday, Sunday - closed    
+                                </span>
+                            </li>
+                        </ul>
+
+                        <p class="btn_call"> 
+                            <a href="tel:+84 988 992 085">Call me</a>
+                        </p>
+                </div>
+                <div class="col-sm-2">
+                    <h3 class="f_ttl">Information</h3>
+                    <ul class="f_li_hover">
+                        <li>About Us</li>  
+                        <li>Shipping & Returns</li>  
+                        <li>Privacy Notice</li>  
+                        <li>Conditions of Use</li>  
+                        <li>RSS</li>  
+                    </ul>
+                </div>
+
+                <div class="col-sm-2">
+                    <h3 class="f_ttl">Service</h3>
+                    <ul class="f_li_hover">
+                        <li>Online support</li>  
+                        <li>Help & FAQs</li>  
+                        <li>Call Center</li>  
+                        <li>Contact Us</li>  
+                        <li>Custom Link</li>  
+                    </ul>
+                </div>
+
+                <div class="col-sm-4">
+                    <h3 class="f_ttl">Instagram</h3>
+                    <ul class="ul_li">
+                        <li>
+                            <img src="img/footer/img18.jpg" alt="img18.jpg">
+                        </li>
+                        <li>
+                            <img src="img/footer/img19.jpg" alt="img18.jpg">
+                        </li>
+                        <li>
+                            <img src="img/footer/img20.jpg" alt="img18.jpg">
+                        </li>
+                        <li>
+                            <img src="img/footer/img21.jpg" alt="img18.jpg">
+                        </li>
+                        <li>
+                            <img src="img/footer/img24.jpg" alt="img18.jpg">
+                        </li>
+                        <li>
+                            <img src="img/footer/img24.jpg" alt="img18.jpg">
+                        </li>
+                        <li>
+                            <img src="img/footer/img24.jpg" alt="img18.jpg">
+                        </li>
+                        <li>
+                            <img src="img/footer/img24.jpg" alt="img18.jpg">
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row mt-5">                
+                <div class="col-9 mb-2 b_footer">
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-skype"></i>
+                    <i class="fab fa-vine"></i>
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+
+                <div class="col-3 map">
+                    <span>Home</span>
+                    <span>New Arrivals</span>
+                    <span>Site map</span>                 
+                </div>
+                <hr>
+                
+                <div class="col-9 mt-5">
+                    <p>Copyright © 2018 byEngoTheme. All Rights Reserved.</p>
+                </div>
+                
+                <div class="col-3 mt-5">
+                    <img src="img/cards/icon1.png" alt="icon1.png">                 
+                    <img src="img/cards/icon2.png" alt="icon1.png">                 
+                    <img src="img/cards/icon3.png" alt="icon1.png">                 
+                    <img src="img/cards/icon4.png" alt="icon1.png">                 
+                    <img src="img/cards/icon5.png" alt="icon1.png">                 
+                </div>            
+            </div>
+        </div>
+    </footer>
+
+    <script src="styles/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="script/add_to_cart.js"></script>
+</body>
+</html>

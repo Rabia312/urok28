@@ -1,0 +1,729 @@
+/* Базовые настройки страницы */
+/*  * - означает обращение ко всем элементам сайта */
+
+* {
+    box-sizing: border-box;
+    /* text-decoration: none; */
+}
+
+body, p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Конец базовых настроек страницы */
+
+/* Универсальные стили */
+
+.left, .ul_li > li { /* > - означает что обращение будет происходить только для родительских элементов*/
+     float: left; /* это обтекание. Выравнивание в левую или правую сторону */
+}
+
+.right {
+    float: right;
+}
+
+.ul_li, ul {
+    list-style: none;
+    /* display: inline-block;// */
+    margin: 0;
+    padding: 0;
+}
+
+.ul_li li {
+    padding: 10px 15px;
+}
+
+
+.b-r li {
+    border-right: 1px solid #dadada;
+    
+    /* border - границы
+    границы: ширина тип цвет */
+}
+
+.b-r li:last-child {
+    border-right: 0;
+    
+}
+
+.container {
+    width: 1220px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.m-l-10 {
+    margin-left: 10px;
+}
+
+.red {color: red;}
+.orange {color: orange;}
+.blue {color: blue;}
+
+.dropdown_menu, .dropdown_menu.my_cart {
+    display: none;
+    /* display: block; */
+    position: absolute;
+    background-color: white;
+    border: none;
+    top: 20px;
+    left: 15px;
+    padding: 20px 40px;
+    margin-top: 20px;
+    align-items: start;
+    box-shadow: 0 0 10px black;
+    z-index: 2;
+}
+
+.dropdown_menu li:first-child {
+    font-weight: bold;
+    color: #111010;
+}
+
+.dropdown_menu li:hover, figure:hover {
+    color: #7cd0f5;
+    cursor: pointer;
+}
+
+.hover_menu li:hover .dropdown_menu, .jeltyi_krug:hover .dropdown_menu {
+    transition: .5s;
+    color: #ababab;
+    display: flex;
+    align-items: flex-start;
+}
+
+.jeltyi_krug:hover .dropdown_menu {
+    align-items: center;
+}
+
+.hover_menu li{
+    margin: 0 15px;
+}
+
+.hover_menu a:hover {
+    background-color: #7cd0f5;
+    border-radius: 20px;
+    padding: 5px 22px;
+    color: white;
+    margin: 0 -22px;
+    transition: .2s;
+}
+
+.hover_menu a:hover .fa-chevron-down {
+    transform: rotate(-180deg);
+}
+
+.dnone {
+    display: none;
+}
+
+.bg_orange {
+    background: #ffcc33;
+}
+
+.bg_green {
+    background: green;
+}
+
+.bg_blue {
+    background: rgb(71, 163, 249);
+}
+
+.bg_red {
+    background: rgb(250, 56, 56);
+}
+
+/* Конец универсальных стилей */
+
+/* урок 14 */
+
+/* Стили для страницы */
+/* верхнее меню */
+.verhnee_menu {
+    background: #f7f7f7;
+    display: inline-block;
+    width: 100%;
+}
+
+.verhnee_menu .ul_li i {
+    margin-right: 10px;
+}
+
+.icon_msg {
+    position: relative; /* position - это позиционирование */
+}
+
+.msg {
+    position: absolute;
+    top: -7px;
+    right: 8px;
+    background: red;
+    width: 13px;
+    height: 13px;
+    text-align: center;
+    color: white;
+    font-size: 9px;
+    line-height: 1.5;
+    border-radius: 13px;
+}
+
+/* урок 16 */
+/* центральное меню */
+.center_menu ul {
+    display: flex; /* display - это блок отображения. Возможные вариации отображения*/
+    justify-content: space-between;
+    align-items: center;
+}
+
+.seryi_krug, .jeltyi_krug {
+    display: inline-block;
+    background: #ececec;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 2.5;
+    border-radius: 20px;
+    color: #4c4b6c;
+}
+
+.jeltyi_krug {
+    background-color: #fc3;
+    color: white;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.cart p {
+    font-weight: bold;
+    line-height: 10px;
+    margin-top: 10px;
+}
+
+.cart p span {
+    font-weight: normal;
+    color: #ababab;
+    font-size: 12px;
+}
+
+.my_cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.my_cart li {
+    display: flex;
+}
+
+.my_cart img {
+    /* margin-right: -28px; */
+    margin-left: -30px;
+}
+
+.my_cart .ttl {
+    margin-top: 15px;
+    /* margin-left: 10px; */
+    padding: 0 20px;
+}
+
+.my_cart ul {
+    border-bottom: 1px solid #9e9e9e;
+    padding: 20px;
+}
+
+/* .trash {
+    float: right;
+    padding-top: 6px;
+    margin-left: 150px;
+} */
+
+.fa-trash-alt {
+    float: right;
+    font-weight: normal;
+    color: #336;
+}
+
+.center_menu .right > p:first-child {
+    font-weight: bold;
+    color: #4c4b6c;
+}
+
+.center_menu .right > p {
+    color: #ababab;
+}
+
+/* нижнее меню  */
+.nijnee_menu {
+    display: inline-block;
+    width: 100%;
+    background: #f7f7f7;
+    position: relative;
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+    height: 50px;
+}
+
+.nijnee_menu a {
+    color: #4c4b6c;
+}
+
+.home {
+    width: 250px;
+}
+
+.products {
+    min-width: 700px;
+    background: url("../img/header/background.png") 70% 0 no-repeat;
+    /* background-size: 100%;    */
+    background-position: -262px 0;
+}
+
+.fas.fa-chevron-down {
+    font-size: 8px;
+    margin-left: 5px;
+}
+
+.blogs {
+    left: 280px;
+}
+
+.about_us {    
+    left: 390px;
+}
+
+.dropdown_menu.my_cart {
+    left: 820px;
+}
+
+.search {
+    /* min-width: 300px;  */
+    border: none; 
+    border-radius: 25px;
+    margin-right: 40px;    
+    background-color: #fff;
+    margin-top: 8px;
+}
+
+input[type="search"] {
+    height: 35px;
+    border: none; 
+    padding: 10px 0 10px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none; 
+    -webkit-appearance: none; 
+    width: 234px;
+}
+
+.search button {
+    width: 50px; 
+    border: none; 
+    font-size: 15px;
+    background-color: #fff;
+}
+
+.search button:active, .search button:focus  {
+    outline: none; 
+}
+
+figure p {    
+    text-align: center;
+    padding: 15px;
+}
+
+
+
+/* урок 17 */
+
+.block_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #4c4b6c;
+    border-bottom: 1px solid #e8e8e8;    
+}
+
+#product {
+    padding: 0 15px;
+}
+
+.body_block {
+    margin-top: 20px;
+    /* display: inline-block; */
+}
+
+.list_product > .product {
+    float:left;
+}
+
+.block_stars {
+    display: inline-block;
+}
+
+.block_stars > div {    
+    float: left;
+}
+
+/* product style */
+
+.list_product {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product {
+    display: inline-block;
+    min-height: 310px;
+    width: 200px;
+}
+
+.product img {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    object-fit: contain;
+}
+
+.body_product {
+    margin-top: 10px;
+}
+
+.stars {
+    margin-right: 5px;
+}
+
+.stars > i {
+    color: #ffcc33;
+    font-size: 10px;
+    margin-left: -4px;
+}
+
+.stars > i:first-child {
+    margin-left: 0;
+}
+
+.reviews {
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.price {
+    display: inline-block;
+    width: 100%;
+    margin-top: -5px;
+}
+
+.price span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4c4b6c;
+}
+
+.price del {
+    font-size: 15px;
+    margin-left: 12px;
+    color: #9e9e9e;
+    line-height: 2;
+}
+
+.btns li {
+    padding: 0;
+}
+
+.btns .ul_li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btns .seryi_krug {
+    transition: .5s;
+}
+.btns li:hover .seryi_krug {
+    background-color: #7cd0f5;
+    color: white;
+    cursor: pointer;
+}
+
+.img {
+    position: relative;
+}
+
+.desc_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ffffffb5;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #dcdcdcb5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: .2s;
+}
+
+.desc {
+    width: 80%;
+    text-align: center;
+}
+
+.ttl {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #4c4b6c;
+}
+.product:hover .dnone {
+    display: block;
+}
+
+.product:hover .block_stars {
+    display: none;
+}
+
+.product:hover .desc_img {
+    opacity: 1;
+}
+
+.tools {
+    position: absolute;
+    right: -7px;
+    top: 7px;    
+    color: white;
+    padding: 3px 6px;
+    font-size: 13px;
+    border-radius: 4px;
+    z-index: 1;
+    /* opacity: 1; */
+} 
+/* ------------------------------ */
+.tools.bg_orange::after, .tools.bg_blue::after, .tools.bg_red::after, .tools.bg_green::after {
+    content: "";
+    position: absolute;
+    border-bottom: 10px solid transparent;
+    left: 12%;
+    z-index: 2;
+    bottom: -33%;
+}
+
+.tools.bg_orange::after  {
+    border-left: 8px solid #ffcc33;
+}
+
+.tools.bg_green::after  {
+    border-left: 8px solid green;
+}
+
+.tools.bg_blue::after  {
+    border-left: 8px solid #47a3f9;
+}
+
+.tools.bg_red::after  {
+    border-left: 8px solid #fa3838;
+}
+
+/* урок 18 */
+
+#banner img {
+    width: 100%;
+}
+
+.btn_call {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn_call a {
+    background: #47a3f9;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn_call a:hover {
+    background: #2f96c2;
+}
+
+.f_li_hover  li { 
+    padding: 5px 0;
+    transition: .5s;
+}
+
+.f_li_hover  li:hover{
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.f_ttl {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.f_ttl::before {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: #d2d2d2;
+    position: absolute;
+    bottom: -7px;
+}
+
+footer .ul_li li {
+    padding: 2px;
+}
+
+/* .nijnee_menu .container > div {
+    width: 45%;
+} ??????????????????????????????????????????????*/
+
+.b_footer i {
+    margin: 0 20px 0 0;
+}
+
+.map span {
+    margin: 0 0 0 20px;
+
+}
+/* Конец стилей для страницы */
+
+/* мобильная адаптация */
+/* урок 19 */
+
+/* Есть 2 вида адаптации:
+
+1) Резиновый шаблон - это когда весь сайт задан в % соотношении, т.е. когда мы уменьшаем размер браузера все данные будут растягиваться или сжиматься
+
+2) Фиксированный - это когда мы адаптируем наш сайт по стандарты того или иного устройства */
+
+ @media (max-width:1024px) { 
+     /*  max-width:1024px - от этого размера и ниже
+         min-width:1024px - от этого размера и выше */
+    .container {
+        width: auto;
+    }
+
+    .list_product {
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+    
+    .product {
+        margin-right: 34px;
+    }
+
+    .list_product > .product:nth-child(4n) {
+        margin-right: 0;
+    }
+    
+    .verhnee_menu, .center_menu p {
+        font-size: 12px;
+    }
+
+    .f_ttl {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:812px) {
+    .verhnee_menu .left,
+    .center_menu .left {
+        display: none;
+    }
+
+    .m-l-10 {
+        margin-left: 0;
+    }
+    
+    .list_product > .product:nth-child(3n) {
+        margin-right: 0;
+    }
+    
+    .list_product > .product:nth-child(4n) {
+        margin-right: 30px;
+    }
+
+    .product {
+        margin-right: 30px;
+    } 
+}
+
+@media (max-width:736px) { 
+    .center_menu .ul_li > li:nth-child(3),
+    .center_menu .ul_li > li:nth-child(4),
+    .nijnee_menu .left {
+        display: none;
+    }
+
+    /* .nijnee_menu .container > div,
+    .right img,
+    .product img {
+        width: 90%;
+    }???????????????????????????????????? */
+}
+
+@media (max-width:480px) {
+    .verhnee_menu, .center_menu p {
+        font-size: 10px;
+    }
+
+    .verhnee_menu .right {
+        float: none;
+    }
+
+    .center_menu img {
+        width: 80px;
+    }
+
+    .center_menu li {
+        padding-top: 0;
+    }
+
+    .nijnee_menu, .ttl {
+        font-size: 12px;
+    }
+
+    input[type="search"] {
+       display: none;
+    }    
+    
+    .search button {
+        /* width: 20px; 
+        height: 20px;  */
+        border: none; 
+        font-size: 12px;
+        background-color: #fff;
+    }
+    
+    .search {
+        min-width: 20px;
+        margin-right: 20px;
+    }
+
+    .product img {
+        width: 100%;
+    }
+
+    .product {
+        margin-right: 0;
+        width: 45%;
+    }
+
+    .list_product {
+        justify-content: space-between;
+    }
+
+    .list_product > .product:nth-child(4n) {
+        margin-right: 0;
+    }
+
+   
+}
+
+/* конец мобильной адаптации */
